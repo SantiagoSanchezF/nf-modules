@@ -1,0 +1,9 @@
+- name: easel eslreformat test_easel_eslreformat
+  command: nextflow run ./tests/modules/ebi-metagenomics/easel/eslreformat -entry test_easel_eslreformat -c ./tests/config/nextflow.config
+  tags:
+    - easel
+    - easel/eslreformat
+  files:
+    - path: output/easel/test.fa
+      md5sum: 228265048e8bee3a2bbcfca2c53c0f34
+    - path: output/easel/versions.yml

@@ -1,0 +1,7 @@
+name: easel_eslreformat
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - bioconda::easel=0.49
