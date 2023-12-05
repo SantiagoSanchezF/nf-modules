@@ -58,17 +58,21 @@ fraggenescan:
   - modules/ebi-metagenomics/fraggenescan/**
   - tests/modules/ebi-metagenomics/fraggenescan/**
 
+hhsuite/hhblits:
+  - modules/ebi-metagenomics/hhsuite/hhblits/**
+  - tests/modules/ebi-metagenomics/hhsuite/hhblits/**
+
 infernal/cmsearch:
   - modules/ebi-metagenomics/infernal/cmsearch/**
   - tests/modules/ebi-metagenomics/infernal/cmsearch/**
 
-mapseq:
-  - modules/ebi-metagenomics/mapseq/**
-  - tests/modules/ebi-metagenomics/mapseq/**
-
 interproscan:
   - modules/ebi-metagenomics/interproscan/**
   - tests/modules/ebi-metagenomics/interproscan/**
+
+mapseq:
+  - modules/ebi-metagenomics/mapseq/**
+  - tests/modules/ebi-metagenomics/mapseq/**
 
 prodigal:
   - modules/ebi-metagenomics/prodigal/**

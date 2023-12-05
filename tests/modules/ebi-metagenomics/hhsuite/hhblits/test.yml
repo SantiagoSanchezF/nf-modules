@@ -1,0 +1,10 @@
+- name: hhsuite hhblits test_hhsuite_hhblits
+  command: nextflow run ./tests/modules/ebi-metagenomics/hhsuite/hhblits -entry test_hhsuite_hhblits -c ./tests/config/nextflow.config -c ./tests/modules/ebi-metagenomics/hhsuite/hhblits/nextflow.config
+  tags:
+    - hhsuite
+    - hhsuite/hhblits
+  files:
+    - path: output/hhsuite/test.hhr
+      contains:
+        - '# TODO nf-core: file md5sum was variable, please replace this text with a string found in the file instead '
+    - path: output/hhsuite/versions.yml
