@@ -1,0 +1,9 @@
+- name: hhsuite reformat test_hhsuite_reformat
+  command: nextflow run ./tests/modules/ebi-metagenomics/hhsuite/reformat -entry test_hhsuite_reformat -c ./tests/config/nextflow.config
+  tags:
+    - hhsuite/reformat
+    - hhsuite
+  files:
+    - path: output/hhsuite/test.a3m
+      md5sum: 0ec4d1cd8d0d6278539bd7d30d69ca65
+    - path: output/hhsuite/versions.yml
