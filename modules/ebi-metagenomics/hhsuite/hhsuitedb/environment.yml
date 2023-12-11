@@ -1,0 +1,9 @@
+name: hhsuite_hhsuitedb
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - bioconda::hhsuite=3.3.0
+  - bioconda::ffindex=0.98
+  - openmpi

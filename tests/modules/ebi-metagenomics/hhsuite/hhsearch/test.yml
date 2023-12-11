@@ -1,0 +1,10 @@
+- name: hhsuite hhsearch test_hhsuite_hhsearch
+  command: nextflow run ./tests/modules/ebi-metagenomics/hhsuite/hhsearch -entry test_hhsuite_hhsearch -c ./tests/config/nextflow.config -c ./tests/modules/ebi-metagenomics/hhsuite/hhsearch/nextflow.config
+  tags:
+    - hhsuite/hhsearch
+    - hhsuite
+  files:
+    - path: output/hhsuite/test.hhr
+      contains:
+        - "PF14875.9 ; PIP49_N ; N-term c  99.8   5E-26 1.1E-29  194.2   0.0  145   22-178     1-149 (150)"
+    - path: output/hhsuite/versions.yml

@@ -1,0 +1,13 @@
+## TODO nf-core: Please run the following command to build this file:
+#                nf-core modules create-test-yml /hhsuitedb
+- name: "hhsuite hhsuitedb"
+  command: nextflow run ./tests/modules/ebi-metagenomics/hhsuite/hhsuitedb -entry test_hhsuite_hhsuitedb -c ./tests/config/nextflow.config
+  tags:
+    - "hhsuite"
+    - "hhsuite/hhsuitedb"
+  files:
+    - path: "output/hhsuite/test.bam"
+      md5sum: e667c7caad0bc4b7ac383fd023c654fc
+    - path: "output/hhsuite/versions.yml"
+      md5sum: a01fe51bc4c6a3a6226fbf77b2c7cf3b
+    

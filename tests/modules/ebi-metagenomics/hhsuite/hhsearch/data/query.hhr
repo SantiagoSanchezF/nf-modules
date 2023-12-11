@@ -1,0 +1,213 @@
+Query         sp|Q5VUD6|FA69B_HUMAN Protein FAM69B OS=Homo sapiens GN=FAM69B PE=2 SV=3
+Match_columns 431
+No_of_seqs    59 out of 59
+Neff          4.2743
+Searched_HMMs 288
+Date          Tue Dec  5 09:37:49 2023
+Command       hhblits -cpu 4 -i data/query.a3m -d /home/vangelis/Desktop/Tools/hh/databases/pfamA_35.0/pfam -o data/query.hhr -n 1 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 PF14875.9 ; PIP49_N ; N-term c  99.8   5E-26 1.1E-29  194.2   0.0  145   22-178     1-149 (150)
+  2 PF12260.11 ; PIP49_C ; Protein  99.8 1.9E-25 4.9E-29  183.0   0.0  175  197-399     1-183 (183)
+  3 PF14531.9 ; Kinase-like ; Kina  33.5     1.6 0.00044   30.4   0.0   54  265-321   141-194 (289)
+  4 PF07714.20 ; PK_Tyr_Ser-Thr ;   29.1     2.2 0.00059   29.3   0.0  175  202-401    43-249 (262)
+  5 PF00036.35 ; EF-hand_1 ; EF ha  22.7     3.4 0.00092   17.0   0.0   21  179-199     7-27  (29)
+  6 PF13405.9 ; EF-hand_6 ; EF-han  22.5     3.6 0.00093   18.4   0.0   21  177-197     5-25  (30)
+  7 PF12330.11 ; Haspin_kinase ; H  19.8     4.5  0.0011   31.4   0.0   55  266-322   216-270 (381)
+  8 PF08116.14 ; Toxin_29 ; PhTx n  18.4     7.4  0.0013   23.0   0.0   17  330-347     6-22  (31)
+  9 PF10140.12 ; YukC ; WXG100 pro  16.0     6.6  0.0016   30.8   0.0  113  201-350     9-126 (355)
+ 10 PF07417.15 ; Crl ; Sigma facto  15.1     9.2  0.0018   28.9   0.0   22  328-352    22-43  (128)
+
+No 1
+>PF14875.9 ; PIP49_N ; N-term cysteine-rich ER, FAM69
+Probab=99.82  E-value=5e-26  Score=194.19  Aligned_cols=145  Identities=17%  Similarity=0.272  Sum_probs=135.6  Template_Neff=8.500
+
+Q sp|Q5VUD6|FA69   22 GRLPGLRVRCIFLAWLGVFAGSWLVYVHYSSYSERCRGHVCQ---VVICDQYRKGIISGSVCQDLCELHMVEWRTC-LSV   97 (431)
+Q Consensus        22 ~r~~~~~~k~~~~~wl~ifv~sw~vy~~yss~selcr~~~~~---~~iC~~Y~~G~isG~lC~~LC~~~~l~~~~C-L~~   97 (431)
+                      +||++++++| +++|+++++++|++|++++ ++..|++++++   ..+|++|++|+++|++|++||.++++.+.+| .++
+T Consensus         1 ~~l~~~~~~~-~~~~~~~~~~~~~~~~~~~-~~~~C~~~~~~~~i~~lC~~Y~~g~i~G~lC~~LC~~~~i~~~~C~~~~   78 (150)
+T E9HCK7_DAPPU/1    1 TRLVFHKKCF-FVVLIICSLSMISLFYLLQ-WNIICLNIDIENRLNILCNEYSQGKAFGRLCEPLCNNGEISALSCESMH   78 (150)
+T ss_pred             CCchHHHHHH-HHHHHHHHHHHHHHHHHHh-hcccCCchHHHHHHHHHHHHHhCCCccccccHHHHhCCCeEEEeeeccc
+Confidence            4899999999 9999999999999997777 99999999999   8899999999999999999999999999999 999
+
+
+Q sp|Q5VUD6|FA69   98 APGQQVYSGLWRDKDVTIKCGIEETLDSKARSDAAPRRELVLFDKPTRGTSIKEFREMTLSFLKANLGDLPSLPALVGQV  177 (431)
+Q Consensus        98 ~~~~qV~~a~W~~~~vvlK~~~~~~~~~~~~~~~~pr~e~~lfdkpt~g~s~~eF~emv~~~lk~~lg~~~~l~~Lv~~i  177 (431)
+                      .++++||+|+|+++++|+|++ .  ...++++++|+++++.++ +|    ++++|++||.++|++++|++  +++|+++|
+T Consensus        79 ~~~~~Vf~~~~~~~~~vlK~~-~--~~~~~~~l~~~~~~~~~~-~p----~~~~f~~mv~~~v~~~~~~~--~~~L~~~i  148 (150)
+T E9HCK7_DAPPU/1   79 KGKFAVFTALWNNSLIVIKSH-R--IKSEYIPLQWTNSNSSEV-YP----NYQELVEMVTQSMLVNFGIQ--KENLMDHL  148 (150)
+T ss_pred             CCCceEEEEEECCEEEEEEEc-c--cchhcCCccccCCCCccc-CC----CHHHHHHHHHHHHHHHcCCC--hHHhhhhh
+Confidence            999999999999999999988 4  567889999988888877 89    99999999999999999998  99999998
+
+
+Q sp|Q5VUD6|FA69  178 L  178 (431)
+Q Consensus       178 l  178 (431)
+                      +
+T Consensus       149 ~  149 (150)
+T E9HCK7_DAPPU/1  149 Y  149 (150)
+T ss_pred             c
+Confidence            7
+
+
+No 2
+>PF12260.11 ; PIP49_C ; Protein-kinase domain of FAM69
+Probab=99.81  E-value=1.9e-25  Score=183.05  Aligned_cols=175  Identities=16%  Similarity=0.191  Sum_probs=158.9  Template_Neff=11.400
+
+Q sp|Q5VUD6|FA69  197 VWALLQRNEFLLLLSLQEKE--HASRLLGYCGDLYLTEGVPHGAWHAAALPPLLRPLLPPALQGALQQWLGPAWPWRAKI  274 (431)
+Q Consensus       197 ~WaLLQqnEfll~~lLqd~e--h~PkllG~CG~~YavE~l~~~~~~g~~lp~~l~~l~p~~~~~~~~q~~~p~W~~raKI  274 (431)
+                      +|+|+|++|+.+++.+++++  ++++++|+|++++++||+.++++    +                   ...+|..+.++
+T Consensus         1 ~~~l~~~~E~~~l~~l~~~~~~~i~~~~g~~~~~~v~e~~~~~~l----l-------------------~~~~~~~~~~~   57 (183)
+T F1QMY0_DANRE/2    1 LYTLAVNQQPLILQMFPGTEGWPFLRYHGSCGRLMVWAASRALRT----L-------------------FSSPLERRADL   57 (183)
+T ss_pred             CchhhhccchhHHhhCCCCCCCchhheeeceecEEEEEcccchhH----h-------------------ccCCHHHHHHH
+Confidence            69999999999999999877  99999999999999999988754    1                   12447888999
+
+
+Q sp|Q5VUD6|FA69  275 AIGLLEFVEELFHGSYGT-FYMCETTLANVGYTATYDFKMADLQQVAPEATVRRFLQGRRCEHS---TDCTYGRDCRAPC  350 (431)
+Q Consensus       275 Aig~Le~veelf~~~~g~-l~mCDv~~~nfG~~~~~~~k~iDld~v~~E~~~r~~L~~r~Ce~d---~DC~f~~DC~S~C  350 (431)
+                      +.++++++.+++....+. +.++|+++.|++++.++.+++.|++...+.++    +.++.|+++   +||++| +|..+|
+T Consensus        58 ~~~l~~~~~~l~~~~~~~~~~~~dl~~~~~~~~~~~~~~l~d~~~~~~~~~----~~~~~~~~~~~~~dc~~~-~~~~~~  132 (183)
+T F1QMY0_DANRE/2   58 AYQLLHITQSLSANSLRFRLFYTRIPEDMFGILEDNKVFIVDTSTIGIIDL----QEGHPPDKDLLPEELDVF-SCLSGS  132 (183)
+T ss_pred             HHHHHHHHHHhhhCCCCCEEEEeeCCHHHEEEcCCCcEEEEcchheeEeec----CCCCCCCCCCCchhcCCc-cccccC
+Confidence            999999999999977666 88999999999999899999999998877766    557889999   999998 999999
+
+
+Q sp|Q5VUD6|FA69  351 DRLMRQCKGDLIQPNLAKVCALLRGYLLPGA--PADLREELGTQLRTCTTL  399 (431)
+Q Consensus       351 D~~~~rC~~~~~nnNLq~vC~~i~~~~l~g~--~~~l~~eL~k~l~~C~~~  399 (431)
+                      +...+.|.+...++|++.+|+.+.+++++++  |++++++|+++|++||+|
+T Consensus       133 ~~~~~~c~~~~~~~n~~~~~~~~~~~ll~~~~~p~~~~~~l~~ll~~C~~~  183 (183)
+T F1QMY0_DANRE/2  133 CVRPPPCETVREAQSFILLCKYILNNLLTSNDKQSGLPRAAVDELLVCADP  183 (183)
+T ss_pred             CCCCCCCCCCCCccHHHHHHHHhhccccCCCCCCCcccHHHHHHHHhhcCC
+Confidence            8778999999999999999999999999999  999999999999999986
+
+
+No 3
+>PF14531.9 ; Kinase-like ; Kinase-like
+Probab=33.50  E-value=1.6  Score=30.36  Aligned_cols=54  Identities=9%  Similarity=0.009  Sum_probs=45.0  Template_Neff=13.400
+
+Q sp|Q5VUD6|FA69  265 GPAWPWRAKIAIGLLEFVEELFHGSYGTFYMCETTLANVGYTATYDFKMADLQQVAP  321 (431)
+Q Consensus       265 ~p~W~~raKIAig~Le~veelf~~~~g~l~mCDv~~~nfG~~~~~~~k~iDld~v~~  321 (431)
+                      ..++.....++.+++.++.+++...   +.|.|+++.|++++.++.+++.|++....
+T Consensus       141 ~~~~~~~~~~~~~~~~~l~~l~~~~---~~h~dl~~~ni~~~~~~~~~l~d~~~~~~  194 (289)
+T A0A0F7UNS7_TOX  141 PLADAARLYLTVQAVRLVAHLQDEG---VVHGKILPDSFCLKREGGLYLRDFGSLVR  194 (289)
+T ss_pred             CCCHHHHHHHHHHHHHHHHHHHHcC---cccCcCCHHHEEEccCCeEEEEcccccee
+Confidence            3456677788889999999998753   88999999999999888999999986544
+
+
+No 4
+>PF07714.20 ; PK_Tyr_Ser-Thr ; Protein tyrosine and serine/threonine kinase
+Probab=29.05  E-value=2.2  Score=29.31  Aligned_cols=175  Identities=11%  Similarity=-0.018  Sum_probs=110.8  Template_Neff=13.200
+
+Q sp|Q5VUD6|FA69  202 QRNEFLLLLSLQEKEHASRLLGYCG----DLYLTEGVPHGAWHAAALPPLLRPLLPPALQGALQQWLGPAWPWRAKIAIG  277 (431)
+Q Consensus       202 QqnEfll~~lLqd~eh~PkllG~CG----~~YavE~l~~~~~~g~~lp~~l~~l~p~~~~~~~~q~~~p~W~~raKIAig  277 (431)
+                      +.+|+..+..+.+ ++++.+++.+.    ..+++|++.++++.. .+..               ......+..+..++.+
+T Consensus        43 ~~~e~~~~~~l~~-~~i~~~~~~~~~~~~~~~~~~~~~~~~l~~-~~~~---------------~~~~~~~~~~~~~~~~  105 (262)
+T B4LZB9_DROVI/7   43 FRNEVANFKKTRH-ENLVLFMGACMNPPYLAIVTALCKGNTLYT-YIHQ---------------RREKFAMNRTLLIAQQ  105 (262)
+T ss_pred             HHHHHHHHHhCCC-CCceeeeeeecCCCcEEEEEecCCCCcHHH-HHHh---------------hhccCCHHHHHHHHHH
+Confidence            3456777777766 68999888875    378899999887654 2211               0123456677888899
+
+
+Q sp|Q5VUD6|FA69  278 LLEFVEELFHGSYGTFYMCETTLANVGYTATYDFKMADLQQVAPEATV-----------------RRFLQGRR-------  333 (431)
+Q Consensus       278 ~Le~veelf~~~~g~l~mCDv~~~nfG~~~~~~~k~iDld~v~~E~~~-----------------r~~L~~r~-------  333 (431)
+                      ++.++.++|...   +.|.|+++.|++++ ++.+++.|++........                 .+......       
+T Consensus       106 ~~~~l~~lh~~~---~~~~dl~~~ni~~~-~~~~~l~d~~~~~~~~~~~~~~~~~~~~~~~~y~~pe~~~~~~~~~~~~~  181 (262)
+T B4LZB9_DROVI/7  106 IAQGMGYLHARD---IIHKDLRTKNIFIE-NGKVIITDFGLFSSTKLLYCDMGLGVPQNWLCYLAPELIRALQPCKPPGE  181 (262)
+T ss_pred             HHHHHHHHHhCC---EEcCCCCchhEEEE-CCeEEEecccchheehhhccCCCCccccccccccChhHHHhcCCCCCCCC
+Confidence            999999998854   88999999999999 888999998765443100                 00111111       
+
+
+Q sp|Q5VUD6|FA69  334 ---CEHSTDCTYGRDCRAPCDRLMRQCKGDLIQPNLAKVCALL-RGYLLPGAPADLREELGTQLRTCTTLSG  401 (431)
+Q Consensus       334 ---Ce~d~DC~f~~DC~S~CD~~~~rC~~~~~nnNLq~vC~~i-~~~~l~g~~~~l~~eL~k~l~~C~~~~~  401 (431)
+                         .....|.+.+ ++.......   ........+...+...+ ..+.....|..++.++.+++.+|+....
+T Consensus       182 ~~~~~~~~di~~~-g~~~~~l~~---g~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~l~~~p  249 (262)
+T B4LZB9_DROVI/7  182 CLEFTSYSDVYSF-GTVWYELIC---GEFTFKDQPAESIIWQVGRGMKQSLANLQSGRDVKDLLMLCWTYEK  249 (262)
+T ss_pred             ceecCchhhHHHH-HHHHHHHHH---CCCCCCCCCHHHHHHHHHhcchhccccccCCHHHHHHHHHHhhcCH
+Confidence               3345777777 776654311   11111222222333333 3333444566778889999999998764
+
+
+No 5
+>PF00036.35 ; EF-hand_1 ; EF hand
+Probab=22.68  E-value=3.4  Score=17.01  Aligned_cols=21  Identities=14%  Similarity=0.200  Sum_probs=14.0  Template_Neff=13.000
+
+Q sp|Q5VUD6|FA69  179 LMADFNKDNRVSLAEAKSVWA  199 (431)
+Q Consensus       179 ~mad~nkdg~vs~ae~~S~Wa  199 (431)
+                      ...+.+.++.++.++...+|.
+T Consensus         7 ~~~~~~~~~~i~~~~~~~~~~   27 (29)
+T SPE1A_STRPU/14    7 KNKDTDKSKSITAEELGEFFK   27 (29)
+T ss_pred             HHHCCCCCCCcCHHHHHHHHH
+Confidence            345667777788777666654
+
+
+No 6
+>PF13405.9 ; EF-hand_6 ; EF-hand domain
+Probab=22.48  E-value=3.6  Score=18.44  Aligned_cols=21  Identities=14%  Similarity=0.210  Sum_probs=15.1  Template_Neff=11.700
+
+Q sp|Q5VUD6|FA69  177 VLLMADFNKDNRVSLAEAKSV  197 (431)
+Q Consensus       177 il~mad~nkdg~vs~ae~~S~  197 (431)
+                      ++...|.+.+|.++..|..++
+T Consensus         5 ~f~~~d~~~~g~i~~~e~~~~   25 (30)
+T C1EBS6_MICCC/3    5 AFATYDRDEDGKMARGEFRFA   25 (30)
+T ss_pred             HHHHHcCCCCCCcCHHHHHHH
+Confidence            344567788899988877654
+
+
+No 7
+>PF12330.11 ; Haspin_kinase ; Haspin like kinase domain
+Probab=19.85  E-value=4.5  Score=31.42  Aligned_cols=55  Identities=11%  Similarity=0.099  Sum_probs=46.4  Template_Neff=11.200
+
+Q sp|Q5VUD6|FA69  266 PAWPWRAKIAIGLLEFVEELFHGSYGTFYMCETTLANVGYTATYDFKMADLQQVAPE  322 (431)
+Q Consensus       266 p~W~~raKIAig~Le~veelf~~~~g~l~mCDv~~~nfG~~~~~~~k~iDld~v~~E  322 (431)
+                      ..|.....++.+++.++.++|...  .+.|+|+++.|++++.++.+++.||+.+...
+T Consensus       216 ~~~~~~~~i~~~i~~~l~~lh~~~--~i~H~dlkp~Nill~~~~~~kl~Dfg~a~~~  270 (381)
+T G8ZWR4_TORDC/3  216 TSWSQALHIFWQCVTILYVAETKF--QFEHRNLILDHILVDRNLNVTLCDLKCSRAQ  270 (381)
+T ss_pred             CCHHHHHHHHHHHHHHHHHHHHHc--CcccCCCCcccEEECCCCeEEEcccccceec
+Confidence            446677889999999999998752  3889999999999999999999999876554
+
+
+No 8
+>PF08116.14 ; Toxin_29 ; PhTx neurotoxin family
+Probab=18.39  E-value=7.4  Score=23.02  Aligned_cols=17  Identities=35%  Similarity=1.126  Sum_probs=11.4  Template_Neff=2.100
+
+Q sp|Q5VUD6|FA69  330 QGRRCEHSTDCTYGRDCR  347 (431)
+Q Consensus       330 ~~r~Ce~d~DC~f~~DC~  347 (431)
+                      .+..|++++.|-+. .|.
+T Consensus         6 ~G~qCtS~~qCCsG-kC~   22 (31)
+T TX13_PHONI/1-3    6 NGQQCTSDGQCCYG-KCM   22 (31)
+T ss_pred             CCceecCCCcccCC-eec
+Confidence            36778888887665 443
+
+
+No 9
+>PF10140.12 ; YukC ; WXG100 protein secretion system (Wss), protein YukC
+Probab=16.00  E-value=6.6  Score=30.75  Aligned_cols=113  Identities=9%  Similarity=-0.064  Sum_probs=76.4  Template_Neff=10.400
+
+Q sp|Q5VUD6|FA69  201 LQRNEFLLLLSLQEKEHASRLLGYC--G--DLYLTEGVPHG-AWHAAALPPLLRPLLPPALQGALQQWLGPAWPWRAKIA  275 (431)
+Q Consensus       201 LQqnEfll~~lLqd~eh~PkllG~C--G--~~YavE~l~~~-~~~g~~lp~~l~~l~p~~~~~~~~q~~~p~W~~raKIA  275 (431)
+                      -..+|+.++.. .| |+|  +.+..  +  -+++||+.+.+ ++..  +                   ...+...+..++
+T Consensus         9 ~~~~e~~~l~~-~h-p~i--~~~~~~~~~~~~~~~e~~~~g~~l~~--~-------------------~~~~~~~~l~~~   63 (355)
+T F2F0F1_SOLSS/2    9 ANELEITLLQE-NN-PFI--EKNITLTEDELIFTYKKEPNFMTFGK--L-------------------RTLDERSRWMFA   63 (355)
+T ss_pred             CCHHHHHHHHh-cC-CCc--ceEEEEcCCEEEEEEEeCCCceeHHH--H-------------------hcCCHHHHHHHH
+Confidence            34568888877 55 677  33322  2  27889998444 3321  2                   134567788899
+
+
+Q sp|Q5VUD6|FA69  276 IGLLEFVEELFHGSYGTFYMCETTLANVGYTATYDFKMADLQQVAPEATVRRFLQGRRCEHSTDCTYGRDCRAPC  350 (431)
+Q Consensus       276 ig~Le~veelf~~~~g~l~mCDv~~~nfG~~~~~~~k~iDld~v~~E~~~r~~L~~r~Ce~d~DC~f~~DC~S~C  350 (431)
+                      .+++.++.+ |...   ..|.|++|.|++++.++.+++.|||.....+.       ......+|.+.+ ++....
+T Consensus        64 ~~i~~~l~~-~~~~---~~~~~l~P~Ni~~~~~~~~kl~d~g~~~~~~p-------~~~~~~~di~~~-g~~~~~  126 (355)
+T F2F0F1_SOLSS/2   64 SKVLRFIML-HQSN---RLHLIVCPENILIDESLTAYFLHSGVKESIPP-------YERNKERLWAET-KAIIAA  126 (355)
+T ss_pred             HHHHHHHHH-hcCC---ceEEEeCHHHeEECCCCCEEEEeecccccCCC-------ccCCHHHHHHHH-HHHHHH
+Confidence            999999988 6633   78999999999999999999999997643211       112345677776 665543
+
+
+No 10
+>PF07417.15 ; Crl ; Sigma factor-binding transcriptional regulator Crl
+Probab=15.08  E-value=9.2  Score=28.85  Aligned_cols=22  Identities=27%  Similarity=0.640  Sum_probs=14.8  Template_Neff=4.300
+
+Q sp|Q5VUD6|FA69  328 FLQGRRCEHSTDCTYGRDCRAPCDR  352 (431)
+Q Consensus       328 ~L~~r~Ce~d~DC~f~~DC~S~CD~  352 (431)
+                      ++++..|..  +.+|| ||++.|..
+T Consensus        22 YlRE~qc~~--~~ffF-DCLaVCVn   43 (128)
+T I2BCD5_SHIBC/1   22 YLRENQCGD--SRFFF-DCLAVCVN   43 (128)
+T ss_pred             hccccccCC--CceEe-EEeehhhc
+Confidence            455565544  45677 99999963
+
+

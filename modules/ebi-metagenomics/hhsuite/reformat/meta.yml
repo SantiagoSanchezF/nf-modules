@@ -1,12 +1,11 @@
 ---
 # yaml-language-server: $schema=https://raw.githubusercontent.com/nf-core/modules/master/modules/yaml-schema.json
-name: "hhsuite_hhblits"
-description: search an HHsuite database with a query sequence or MSA
+name: "hhsuite_reformat"
+description: reformats multiple sequence alignment files among various standards
 keywords:
-  - HMM
-  - search
-  - comparison
   - MSA
+  - reformat
+  - fasta
 tools:
   - "hhsuite":
       description: "HH-suite3 for fast remote homology detection and deep protein annotation"

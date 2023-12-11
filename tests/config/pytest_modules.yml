@@ -62,6 +62,14 @@ hhsuite/hhblits:
   - modules/ebi-metagenomics/hhsuite/hhblits/**
   - tests/modules/ebi-metagenomics/hhsuite/hhblits/**
 
+hhsuite/hhsearch:
+  - modules/ebi-metagenomics/hhsuite/hhsearch/**
+  - tests/modules/ebi-metagenomics/hhsuite/hhsearch/**
+
+hhsuite/hhsuitedb:
+  - modules/ebi-metagenomics/hhsuite/hhsuitedb/**
+  - tests/modules/ebi-metagenomics/hhsuite/hhsuitedb/**
+
 hhsuite/reformat:
   - modules/ebi-metagenomics/hhsuite/reformat/**
   - tests/modules/ebi-metagenomics/hhsuite/reformat/**
